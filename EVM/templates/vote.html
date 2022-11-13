@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<button onclick='vte()' type="button" class="btn btn-dark btn-lg" id='vote'>Vote</button>
+<p id="vtec"></p>
+<script src="{{url_for('static',filename='vtecount.js')}}"></script>
+{% endblock %}
